@@ -1,0 +1,23 @@
+<div class="well col-xs-12 moviedetails">
+	<img class="poster img-thumbnail img-responsive" ng-src="img/musicposters/{{music.posterPath}}.jpg">
+
+	<a class="return-link" href="#">
+		<button class="return-btn btn btn-default">
+			<span class="glyphicon glyphicon-arrow-left"></span>
+			Return to Catalog
+		</button>
+	</a>
+
+	<h1 class="movie-title">{{music.title | revertWords}}</h1>
+
+	<a ng-repeat="genre in music.genres" class="btn btn-info" href="#">{{genre.name}}</a>
+	<kbd>Composer:</kbd> <a ng-repeat="comp in music.composer" class="btn btn-default">{{comp.name}}</a>
+	
+	<div class="overview">{{music.overview}}</div>
+
+	<div class="extra-details">
+		<kbd>Library: {{music.library}}</kbd>
+		<kbd>Original Title: {{music.originalTitle}}</kbd>
+	</div>
+
+</div>

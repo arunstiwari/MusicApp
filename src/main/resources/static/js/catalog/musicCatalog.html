@@ -1,0 +1,14 @@
+<div class="well col-sm-10 col-xs-12">
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="page-header section-title">{{pageTitle}}</div>
+		</div>
+		
+		<div class="movie-container col-sm-2 col-xs-6" ng-repeat="music in musicList">
+			<a href="#/music/{{music.id}}" class="movie-thumb">
+        		<img class="thumbnail img-responsive" ng-src="img/musicposters/{{music.posterPath}}.jpg">
+				<h5>{{music.title}}</h5>
+			</a>
+		</div>
+	</div>
+</div>
