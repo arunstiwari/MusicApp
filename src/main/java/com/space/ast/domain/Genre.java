@@ -13,6 +13,7 @@ public class Genre {
 	private int id;
 	
 	private String name;
+	private int total;
 	
 	protected Genre(){}
 
@@ -22,6 +23,14 @@ public class Genre {
 
 	public String getName() {
 		return name;
+	}
+
+	public int getTotal() {
+		return total;
+	}
+
+	public void setTotal(int total) {
+		this.total = total;
 	}
 
 	public void setName(String name) {

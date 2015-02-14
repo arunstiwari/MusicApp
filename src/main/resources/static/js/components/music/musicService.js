@@ -6,5 +6,8 @@ angular.module('musicService.mod',[]).factory('musicService',['$http',function($
 		return $http.get("musicList");
 	}
 	
+	musicAPI.getGenreList = function(){
+		return $http.get("genreList");
+	}
 	return musicAPI;
 }]);

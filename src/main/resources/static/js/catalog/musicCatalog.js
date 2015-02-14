@@ -7,4 +7,8 @@ angular.module('musicDB.catalog',['ui.bootstrap']).controller('musicCatalogCtrl'
 		$scope.musicList = data;
 	});
 	
+	musicService.getGenreList().success(function(data){
+		$scope.genreList=data;
+	});
+	
 }])

@@ -8,27 +8,24 @@ insert into composer (name) values ('Gregory Sweeney');
 insert into composer (name) values ('Dave Hewson');
 insert into composer (name) values ('Gooding');
 insert into composer (name) values ('Gregor Narholz');
-
 insert into composer (name) values ('Gerard Gueudin');
 insert into composer (name) values ('Frederick Charles Sicart');
-
-
 insert into composer (name) values ('Caloun');
 insert into composer (name) values ('Peter Marsh');
 insert into composer (name) values ('Mikel Giffin');
 
-insert into genre (name) values ('Ballad');
-insert into genre (name) values ('Romantic');
-insert into genre (name) values ('Horror');
-insert into genre (name) values ('Instrumental');
-insert into genre (name) values ('Classical');
-insert into genre (name) values ('Western');
-insert into genre (name) values ('Folk');
-insert into genre (name) values ('Adventure');
-insert into genre (name) values ('Dreams');
-insert into genre (name) values ('Blue');
-insert into genre (name) values ('Rock');
-insert into genre (name) values ('Contemporary');
+insert into genre (name,total) values ('Ballad',3);
+insert into genre (name,total) values ('Romantic',7);
+insert into genre (name,total) values ('Horror',0);
+insert into genre (name,total) values ('Instrumental',1);
+insert into genre (name, total) values ('Classical',2);
+insert into genre (name, total) values ('Western',1);
+insert into genre (name, total) values ('Folk',1);
+insert into genre (name, total) values ('Adventure',1);
+insert into genre (name, total) values ('Dreams',2);
+insert into genre (name, total) values ('Blue',1);
+insert into genre (name, total) values ('Rock',1);
+insert into genre (name, total) values ('Contemporary',1);
 
 insert into music (id, library, original_title, overview, poster_path, tagline, title) values (default, 'AX Music', 'AXS 2270 - DOLCE VITA','Goodtimes, great moods and a massive feel good factor', 'AXS-2270', 'great mood, feel good', 'AXS 2270 - DOLCE VITA');
 insert into music_composer (music_id, composer_id) values (1, 11);
@@ -88,7 +85,9 @@ insert into music_genres (music_id, genres_id) values (10, 9);
 insert into music (id, library, original_title, overview, poster_path, tagline, title) values (default, 'Sonoton', 'SCD 881 - Grooves And Pads 2','Contemporary beds in various styles and versions: full, rhythm underscore, ambient underlay and 30 second commercial length.', 'SCD-881', 'contemporary, rhythm underscore', 'SCD 881 - Grooves And Pads 2');
 insert into music_composer (music_id, composer_id) values (11,4);
 insert into music_composer (music_id, composer_id) values (11,12);
+insert into music_genres (music_id, genres_id) values (11, 12);
 
 insert into music (id, library, original_title, overview, poster_path, tagline, title) values (default, 'Sonoton', 'SCDV 300 - Quiet Intensity 2 - Drama','Cinematic minimalist concepts delivering a powerful yet subtle tool for underscoring, composed and mixed with narration in mind.', 'SCDV-300', 'underscoring, narration in mind', 'SCDV 300 - Quiet Intensity 2 - Drama');
 insert into music_composer (music_id, composer_id) values (12,10);
 insert into music_composer (music_id, composer_id) values (12,12);
+insert into music_genres (music_id, genres_id) values (12, 6);
