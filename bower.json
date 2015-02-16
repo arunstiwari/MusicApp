@@ -1,7 +1,7 @@
 {
   "name": "MusicApp",
-  "version": "0.0.0",
-  "description": "A project for AngularJS and Spring Boot",
+  "version": "1.0.0",
+  "description": "A sample app to demonstrate the integration of Spring Boot with AngularJs",
   "repository": "https://github.com/arunstiwari/MusicApp",
   "license": "MIT",
   "private": true,

@@ -3,7 +3,7 @@
 angular.module("genreDB.music",['ui.bootstrap'])
 .controller('genreCtrl', ['$scope', 'musicService', '$routeParams', '$filter', function ($scope, musicService, $routeParams, $filter) {
 
-	$scope.pageSize = 6;
+	$scope.pageSize = 4;
 	$scope.genreName = $routeParams.genreName;
 	$scope.pageTitle = $scope.genreName + " music";
 
