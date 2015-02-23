@@ -1,18 +1,15 @@
 {
-	"paths": {
-		"destination": "src/main/resources/static/assets",
-		"buildPrefix": "app",
-		"distribution": "",
-		"source": "src/main/resources/static/templates",
-		"vendorjs":
-		 [
-		 	"src/main/resources/static/js/bower_components/angular/angular.js",
-		 	"src/main/resources/static/js/bower_components/angular-bootstrap/ui-bootsrap-tpls.js",
-		 	"src/main/resources/static/js/bower_components/angular-route/angular-route.js"	
-		 ],
-		 "vendorcss":
-		 [
-		 	"src/main/resources/static/js/bower_components/bootstrap/dist/css/bootstrap.css"
-		 ]
-	}
+"vendorjs":
+			 [
+			 	"src/main/resources/static/js/bower_components/angular/angular.js",
+			 	"src/main/resources/static/js/bower_components/angular-bootstrap/ui-bootsrap-tpls.js",
+			 	"src/main/resources/static/js/bower_components/angular-route/angular-route.js"	
+			 ],
+ "appjs":
+ 			[	 
+			 	"src/main/resources/static/js/catalog/**/*.js",
+			 	"src/main/resources/static/js/components/**/*.js",
+			 	"src/main/resources/static/js/music/**/*.js"	
+			 ]
+
 }
